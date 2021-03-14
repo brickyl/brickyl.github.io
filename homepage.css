@@ -1,0 +1,11 @@
+/* image 1 */
+#homepagebackground {
+    position: absolute;
+    width: 1440px;
+    height: 878px;
+    left: 0px;
+    top: 1px;
+
+    background: url(image.png);
+}
+
