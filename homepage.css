@@ -1,9 +1,40 @@
 /* image 1 */
-#homepagebackground {
-    position: absolute;
-    width: 1440px;
-    height: 878px;
-    left: 0px;
-    top: 1px;
+body {
+    background-image: url("homebg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
 }
 
+.navigation ul{ 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.navigation li{
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 1px;
+}
+
+.hcenter {
+    position: relative;
+    margin: auto;
+}
+
+#cartsign {
+    height: 100%;
+}
+
+.fink {
+    font-family: FinkHeavy;
+}
+
+.rsfont {
+    font-family: Roboto Slab, Arial;
+}
+
+.bold {
+    font-weight: bold;
+}

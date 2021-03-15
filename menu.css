@@ -1,0 +1,18 @@
+body {
+    background-image: url("menubg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+}
+
+.fink {
+    font-family: FinkHeavy;
+}
+
+.rsfont {
+    font-family: Roboto Slab, Arial;
+}
+
+.bold {
+    font-weight: bold;
+}
