@@ -2,19 +2,23 @@
 <html>
     <head>
         <title>Bun Bun Bakeshop</title>
-        <link rel="stylesheet" href="assignment5.css" type="text/css">
+        <link rel="stylesheet" href="pdetail.css" type="text/css">
         <meta charset="UTF-8">
     </head>
     <body>
         <ul>
             <li><a href="ourstory.html">Our Story</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu.html"><u>Menu</u></a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="faqs.html">FAQs</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
 
         </ul>
         
+        <div class="homeback">
+            <div class="homebacktext">Back to Home</div>
+        </div>
+
         <div>
             <div class="hcenter"> 
                 <img class="sign" src="images/titlesign.png" 
@@ -26,9 +30,33 @@
             <div class="cart"> 
                 <img src="images/titlesign.png" 
                 alt="Cart Sign" id="cartsign" width="200">
-                <h2 class="carttext">Cart(0)</h2>
+                <h2 class="carttext">Cart (0)</h2>
             </div>
         </div>
+
+        <div class="menubox">
+            <div class="backrect"></div>
+            <div class="frontrect"></div>
+            <h2 id="ordertitle">
+                Order
+                <div class="new">
+                    <a href="pdetail.html" class="ttformat">
+                        <img src="images/addnew.png" 
+                        alt="Add new order">
+                    </a>
+                </div>
+            </h2>
+            <div>
+                <h3 class="pickflavor">
+                    1. Pick your flavor!
+                </h3>
+                <div class="itemimage">
+                    <img src="images/itemimage.png" 
+                    alt="Item">
+                </div>
+            </div>
+        </div>
+
         <div class="bot">
             <div class="bottombar"></div>
             <div class="address">
@@ -69,4 +97,5 @@
         
         
     </body>
+
 </html>

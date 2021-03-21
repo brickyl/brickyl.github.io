@@ -1,0 +1,222 @@
+/* image 1 */
+body {
+    background-image: url("images/menubg.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    width: 200px;
+    background-color: #E48397;
+    margin-top: 200px;
+    font-size: 30px;
+}
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: FinkHeavy;
+}
+  
+  /* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.titletext {
+    position: absolute;
+    left: 22%;
+    bottom: 29%;
+    font-family: FinkHeavy;
+    margin-right: 100px;
+    width: 20rem;
+    font-size: 2.4rem;
+}
+
+.ttformat{
+    text-decoration: none;
+}
+
+.hcenter {
+    position: absolute;
+    right: 30%;
+    top: 0;
+}
+
+.sign {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.carttext {
+    position: absolute;
+    left: 32%;
+    bottom: 18%;
+    font-family: FinkHeavy;
+    font-size: 1.4rem;
+}
+
+.frontrect {
+    /* Rectangle 20 */
+    position: absolute;
+    width: 1024px;
+    height: 808px;
+    left: 334px;
+    top: 344px;
+    background: rgba(255, 238, 204, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.backrect {
+    position: absolute;
+    width: 1024px;
+    height: 808px;
+    left: 350px;
+    top: 360px;
+
+    background: rgba(238, 238, 238, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.bottombar{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 105px;
+    top: 170%;
+
+    background: #E8D6D6;
+}
+
+.address{
+    position: absolute;
+    top: 174%;
+    left: 10%;
+    font-family: Arial;
+}
+
+.socialstext{
+    position: absolute;
+    font-size: 20px;
+    top: 175%;
+    left: 60%;
+    font-family: Arial;
+}
+
+#fb{
+    position: absolute;
+    top: 174%;
+    left: 69%;
+}
+
+#tw{
+    position: absolute;
+    top: 173.5%;
+    left: 73%;
+}
+
+#ig{
+    position: absolute;
+    top: 174%;
+    left: 77%;
+}
+
+#yt{
+    position: absolute;
+    top: 174%;
+    left: 81%;
+}
+
+#menutitle {
+    position: absolute;
+    left: 804px;
+    top: 327px;
+    font-size: 52px;
+    font-family: FinkHeavy;
+}
+
+.menubox {
+    font-family: FinkHeavy;
+    font-size: 25px;
+    text-align: center;
+}
+
+.ttformat{
+    text-decoration: none;
+}
+
+.orig {
+    position: absolute;
+    left: 434px;
+    top: 437px;
+}
+
+.blackb {
+    position: absolute;
+    left: 757px;
+    top: 437px;
+}
+
+.wal {
+    position: absolute;
+    left: 1080px;
+    top: 437px;
+}
+
+.glutfree{
+    position: absolute;
+    left: 434px;
+    top: 777px;
+}
+
+.pumpspice{
+    position: absolute;
+    left: 757px;
+    top: 777px;
+}
+
+.carpecn {
+    position: absolute;
+    left: 1080px;
+    top: 777px;
+}
+
+.homeback {
+    position: absolute;
+    width: 232px;
+    height: 76px;
+    left: 345px;
+    top: 300px;
+
+    background: #EA9898;
+    border-radius: 13px;
+
+}
+
+.homebacktext {
+    position: relative;
+    font-family: FinkHeavy;
+    font-size: 28px;
+    text-align: center;
+    top: 8px;
+}
+
