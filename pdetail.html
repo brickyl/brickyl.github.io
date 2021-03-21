@@ -24,13 +24,15 @@
                 <img class="sign" src="images/titlesign.png" 
                 alt="Title Sign" id="titlesign"> 
                 <h1 class="titletext">
-                    <a href="homepage.html" class="ttformat">Bun Bun Bakeshop</a>
+                    <a href="home.html" class="ttformat">Bun Bun Bakeshop</a>
                 </h1>
             </div>
             <div class="cart"> 
                 <img src="images/titlesign.png" 
                 alt="Cart Sign" id="cartsign" width="200">
-                <h2 class="carttext">Cart (0)</h2>
+                <h2 class="carttext">
+                    <a href="cart.html" class="ttformat">Cart (0)</a>
+                </h2>
             </div>
         </div>
 
@@ -47,13 +49,88 @@
                 </div>
             </h2>
             <div>
-                <h3 class="pickflavor">
+                <h3 class="pick flavor">
                     1. Pick your flavor!
                 </h3>
                 <div class="itemimage">
                     <img src="images/itemimage.png" 
                     alt="Item">
+                    <form method="post">
+                        Flavors:
+                        <select name="flavors">
+                            <option value="original">Original</option>
+                            <option value="blackberry">Blackberry</option>
+                            <option value="walnut">Walnut</option>
+                            <option value="original, gluten free">Original (Gluten-Free)</option>
+                            <option value="pumpkin spice">Pumpkin Spice</option>
+                            <option value="caramel pecan">Caramel Pecan</option>
+                          </select>
+                    </form>
+                    <br>
+                    <div class="horizdivide"></div>
+                    <div class="vertdivide"></div>
+                    <div class="descripttitle">
+                        Description:
+                    </div>
+                    <div class="description">
+                        Harvested from the Appalachians, <br>
+                        our mountain blackberries <br>
+                        bring a unique tartness and <br>
+                        earthiness to the classic <br>
+                        cinnamon bun formula. <br>
+                    </div>
+                    <div class="nutrilabel">
+                        Nutrition Facts:
+                    </div>
+                    <div class="nutriimg">
+                        <img src="images/nutrition.png" 
+                        alt="Nutrition">
+                    </div>
                 </div>
+                <div>
+                    <h3 class="pick glazing">
+                        2. Pick your glazing!
+                    </h3>
+                    <div class="glazelabel" id="noneglaze">
+                        None
+                    </div>
+                    <div class="glazelabel" id="sugarmilk">
+                        Sugar-milk
+                    </div>
+                    <div class="glazelabel" id="vanmilk">
+                        Vanilla-milk
+                    </div>
+                    <div class="glazelabel" id="doubchoc">
+                        Double-chocolate
+                    </div>
+                    
+                </div>
+                <div class="glaze-bunsdivide"></div>
+                <div class="buns-totaldivide"></div>
+                <h3 class="pick buncount">
+                    3. How many buns?
+                </h3>
+                <div class="buncountdd">
+                    <form method="post">
+                        Buns:
+                        <select name="numberbuns">
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                          </select>
+                    </form>
+                </div>
+                <div class="cancelblock"> 
+                    Cancel
+                </div>
+                <div class="addtocartblock"> 
+                    <div class="addtocarttext">Add to Cart</div>
+                </div>
+                <div class="ordertotal">
+                    Total:
+                </div>
+                             
             </div>
         </div>
 
