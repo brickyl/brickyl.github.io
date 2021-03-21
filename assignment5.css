@@ -1,0 +1,226 @@
+/* image 1 */
+body {
+    background-image: url("images/homebg.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    width: 200px;
+    background-color: #E48397;
+    margin-top: 200px;
+    font-size: 30px;
+}
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: FinkHeavy;
+}
+  
+  /* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.titletext {
+    position: absolute;
+    left: 22%;
+    bottom: 29%;
+    font-family: FinkHeavy;
+    margin-right: 100px;
+    width: 20rem;
+    font-size: 2.4rem;
+}
+
+.ttformat{
+    text-decoration: none;
+}
+
+.hcenter {
+    position: absolute;
+    right: 30%;
+    top: 0;
+}
+
+.sign {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.carttext {
+    position: absolute;
+    left: 32%;
+    bottom: 18%;
+    font-family: FinkHeavy;
+    font-size: 1.4rem;
+}
+
+.frontrect {
+    /* Rectangle 20 */
+    position: absolute;
+    width: 1024px;
+    height: 444px;
+    left: 334px;
+    top: 317px;
+    background: rgba(255, 238, 204, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.backrect {
+    position: absolute;
+    width: 1024px;
+    height: 444px;
+    left: 350px;
+    top: 333px;
+
+    background: rgba(238, 238, 238, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.bannertext{
+    position: absolute;
+    width: 480px;
+    height: 494px;
+    left: 834px;
+    top: 367px;
+    font-family: Arial;
+}
+
+.bannertext h2{
+    font-size: 35px;
+} 
+
+.bannertext p{
+    font-size: 18px;
+}
+  /* Use carttest binding to cart in the same way to bind */
+  /* frontrect and backrect to roundedrect, maybe also text */
+  /* and content inside of the frontrect. */
+
+.bannerimg{
+    position: absolute;
+    left: 384px;
+    top: 367px;
+}
+
+.ifrontrect {
+    /* Rectangle 20 */
+    position: absolute;
+    width: 1024px;
+    height: 444px;
+    left: 334px;
+    top: 317px;
+    background: rgba(255, 238, 204, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.ibackrect {
+    position: absolute;
+    width: 1024px;
+    height: 444px;
+    left: 350px;
+    top: 333px;
+
+    background: rgba(238, 238, 238, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.mfrontrect {
+    /* Rectangle 20 */
+    position: absolute;
+    width: 1024px;
+    height: 444px;
+    left: 334px;
+    top: 317px;
+    background: rgba(255, 238, 204, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.mbackrect {
+    position: absolute;
+    width: 1024px;
+    height: 444px;
+    left: 350px;
+    top: 333px;
+
+    background: rgba(238, 238, 238, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+/* Rectangle 2 */
+.bottombar{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 105px;
+    top: 122%;
+
+    background: #E8D6D6;
+}
+
+.address{
+    position: absolute;
+    top: 126%;
+    left: 10%;
+    font-family: Arial;
+}
+
+.socialstext{
+    position: absolute;
+    font-size: 20px;
+    top: 127%;
+    left: 60%;
+    font-family: Arial;
+}
+
+#fb{
+    position: absolute;
+    top: 126%;
+    left: 69%;
+}
+
+#tw{
+    position: absolute;
+    top: 125.5%;
+    left: 73%;
+}
+
+#ig{
+    position: absolute;
+    top: 126%;
+    left: 77%;
+}
+
+#yt{
+    position: absolute;
+    top: 126%;
+    left: 81%;
+}
