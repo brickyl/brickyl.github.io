@@ -1,6 +1,6 @@
 /* image 1 */
 body {
-    background-image: url("images/pdetailbg.png");
+    background-image: url("../images/menubg.png");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -75,7 +75,7 @@ li a:hover {
     /* Rectangle 20 */
     position: absolute;
     width: 1024px;
-    height: 1103px;
+    height: 808px;
     left: 334px;
     top: 344px;
     background: rgba(255, 238, 204, 0.95);
@@ -84,12 +84,10 @@ li a:hover {
     border-radius: 30px;
 }
 
-
-
 .backrect {
     position: absolute;
     width: 1024px;
-    height: 1103px;
+    height: 808px;
     left: 350px;
     top: 360px;
 
@@ -104,14 +102,14 @@ li a:hover {
     display: block;
     width: 100%;
     height: 105px;
-    top: 220%;
+    top: 170%;
 
     background: #E8D6D6;
 }
 
 .address{
     position: absolute;
-    top: 224%;
+    top: 174%;
     left: 10%;
     font-family: Arial;
 }
@@ -119,36 +117,36 @@ li a:hover {
 .socialstext{
     position: absolute;
     font-size: 20px;
-    top: 227%;
+    top: 175%;
     left: 60%;
     font-family: Arial;
 }
 
 #fb{
     position: absolute;
-    top: 226%;
+    top: 174%;
     left: 69%;
 }
 
 #tw{
     position: absolute;
-    top: 225.5%;
+    top: 173.5%;
     left: 73%;
 }
 
 #ig{
     position: absolute;
-    top: 226%;
+    top: 174%;
     left: 77%;
 }
 
 #yt{
     position: absolute;
-    top: 226%;
+    top: 174%;
     left: 81%;
 }
 
-#ordertitle {
+#menutitle {
     position: absolute;
     left: 804px;
     top: 327px;
@@ -164,6 +162,42 @@ li a:hover {
 
 .ttformat{
     text-decoration: none;
+}
+
+.orig {
+    position: absolute;
+    left: 434px;
+    top: 437px;
+}
+
+.blackb {
+    position: absolute;
+    left: 757px;
+    top: 437px;
+}
+
+.wal {
+    position: absolute;
+    left: 1080px;
+    top: 437px;
+}
+
+.glutfree{
+    position: absolute;
+    left: 434px;
+    top: 777px;
+}
+
+.pumpspice{
+    position: absolute;
+    left: 757px;
+    top: 777px;
+}
+
+.carpecn {
+    position: absolute;
+    left: 1080px;
+    top: 777px;
 }
 
 .homeback {
@@ -186,168 +220,3 @@ li a:hover {
     top: 8px;
 }
 
-.new {
-    position: relative;
-    left: 420px;
-    bottom: 59px;
-}
-
-.pick {
-    position: absolute;
-    right: 220px;
-}
-
-.flavor {
-    top: 400px;
-}
-
-.glazing {
-    top: 890px;
-    right: 205px;
-}
-
-.buncount {
-    top: 1000px;
-    right: 220px;
-}
-
-.menubox h3 {
-    position: relative;
-    font-size: 36px;
-}
-
-.itemimage{
-    position: absolute;
-    width: 435px;
-    height: 384px;
-    left: 420px;
-    top: 500px;
-}
-
-.vertdivide {
-    position: absolute;
-    bottom: -50px;
-    left: 500px;
-    border-left: thick solid #000000;
-    height: 460px;
-}
-
-.horizdivide {
-    border-top: thick solid #000000;
-    width: 850px;
-}
-
-.glaze-bunsdivide {
-    position: absolute;
-    border-top: thick solid #000000;
-    width: 850px;
-    top: 1167px;
-    right: 250px;
-}
-
-.buns-totaldivide {
-    position: absolute;
-    border-top: thick solid #000000;
-    width: 850px;
-    top: 1257px;
-    right: 250px;
-}
-
-.descripttitle{
-    position: relative;
-    left : 480px;
-    bottom: 500px;
-    font-family: FinkHeavy;
-    font-size: 30px;
-}
-
-.description{
-    position: relative;
-    left : 580px;
-    bottom: 490px;
-    font-family: Arial;
-    font-size: 20px;
-    text-align: left;
-}
-
-.nutrilabel {
-    position: relative;
-    left : 480px;
-    bottom: 467px;
-    font-family: FinkHeavy;
-    font-size: 30px;
-}
-
-.nutriimg {
-    position: absolute;
-    width: 305px;
-    height: 233px;
-    left: 567px;
-    top: 206px;
-    border: 1px solid black;
-}
-
-.glazelabel {
-    position: absolute;
-    width: 200px;
-    top: 1080px;
-    height: 32px;
-
-    background: #EA9898;
-}
-
-#noneglaze {
-    left: 385px;
-}
-
-#sugarmilk {
-    left: 615px;
-}
-
-#vanmilk {
-    left: 845px;
-}
-
-#doubchoc {
-    left: 1075px;
-}
-
-.buncountdd {
-    position: absolute;
-    top: 1200px;
-    right: 600px;
-}
-
-.cancelblock {
-    position: absolute;
-    width: 214px;
-    height: 44px;
-    left: 772px;
-    top: 1339px;
-
-    background: #FCFCFC;
-    border: 8px solid #EA9898;
-    box-sizing: border-box;
-}
-
-.addtocartblock {
-    position: absolute;
-    width: 215px;
-    height: 44px;
-    left: 1038px;
-    top: 1339px;
-
-    background: #EA9898;
-}
-
-.addtocarttext {
-    position: relative;
-    top: 10px;
-}
-
-.ordertotal {
-    position: absolute;
-    top: 1349px;
-    left: 420px;
-    font-size: 28px;
-}

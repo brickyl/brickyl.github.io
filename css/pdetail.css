@@ -1,0 +1,388 @@
+/* image 1 */
+body {
+    background-image: url("../images/pdetailbg.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 0;
+    border:0;
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    width: 200px;
+    background-color: #E48397;
+    margin-top: 200px;
+    font-size: 30px;
+}
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: FinkHeavy;
+}
+  
+  /* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.titletext {
+    position: absolute;
+    left: 22%;
+    bottom: 29%;
+    font-family: FinkHeavy;
+    margin-right: 100px;
+    width: 20rem;
+    font-size: 2.4rem;
+}
+
+.ttformat{
+    text-decoration: none;
+}
+
+.hcenter {
+    position: absolute;
+    right: 30%;
+    top: 0;
+}
+
+.sign {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#carttext {
+    position: absolute;
+    left: 32%;
+    bottom: 18%;
+    font-family: FinkHeavy;
+    font-size: 1.4rem;
+}
+
+.frontrect {
+    /* Rectangle 20 */
+    position: absolute;
+    width: 1024px;
+    height: 1103px;
+    left: 334px;
+    top: 344px;
+    background: rgba(255, 238, 204, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+
+
+.backrect {
+    position: absolute;
+    width: 1024px;
+    height: 1103px;
+    left: 350px;
+    top: 360px;
+
+    background: rgba(238, 238, 238, 0.95);
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.bottombar{
+    position: absolute;
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    height: 105px;
+    top: 220%;
+
+    background: #E8D6D6;
+}
+
+.address{
+    position: absolute;
+    top: 224%;
+    left: 10%;
+    font-family: Arial;
+}
+
+.socialstext{
+    position: absolute;
+    font-size: 20px;
+    top: 227%;
+    left: 60%;
+    font-family: Arial;
+}
+
+#fb{
+    position: absolute;
+    top: 226%;
+    left: 69%;
+}
+
+#tw{
+    position: absolute;
+    top: 225.5%;
+    left: 73%;
+}
+
+#ig{
+    position: absolute;
+    top: 226%;
+    left: 77%;
+}
+
+#yt{
+    position: absolute;
+    top: 226%;
+    left: 81%;
+}
+
+#ordertitle {
+    position: absolute;
+    left: 804px;
+    top: 327px;
+    font-size: 52px;
+    font-family: FinkHeavy;
+}
+
+.menubox {
+    font-family: FinkHeavy;
+    font-size: 25px;
+    text-align: center;
+}
+
+.ttformat{
+    text-decoration: none;
+}
+
+.homeback {
+    position: absolute;
+    width: 232px;
+    height: 76px;
+    left: 345px;
+    top: 300px;
+
+    background: #EA9898;
+    border-radius: 13px;
+
+}
+
+.homebacktext {
+    position: relative;
+    font-family: FinkHeavy;
+    font-size: 28px;
+    text-align: center;
+    top: 8px;
+}
+
+.new {
+    position: relative;
+    left: 420px;
+    bottom: 59px;
+}
+
+.pick {
+    position: absolute;
+    right: 225px;
+}
+
+.flavor {
+    top: 400px;
+
+}
+
+.glazing {
+    top: 950px;
+    right: 205px;
+}
+
+.buncount {
+    position: absolute;
+    left: 500px;
+    top: 705px;
+    width: 100px;
+    z-index: 10;
+
+}
+
+.buncountq {
+    top: 1030px;
+    right: 220px;
+}
+
+.menubox h3 {
+    position: relative;
+    font-size: 36px;
+}
+
+.topsect{
+    position: absolute;
+    width: 435px;
+    height: 384px;
+    left: 420px;
+    top: 500px;
+}
+
+.container {
+    width: 400px;
+    height: 360px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+/* Resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.vertdivide {
+    position: absolute;
+    bottom: -100px;
+    left: 500px;
+    border-left: thick solid #000000;
+    height: 500px;
+}
+
+.horizdivide {
+    border-top: thick solid #000000;
+    width: 850px;
+}
+
+.glaze-bunsdivide {
+    position: absolute;
+    border-top: thick solid #000000;
+    width: 850px;
+    top: 1192px;
+    right: 250px;
+}
+
+.buns-totaldivide {
+    position: absolute;
+    border-top: thick solid #000000;
+    width: 850px;
+    top: 1297px;
+    right: 250px;
+}
+
+.descripttitle{
+    position: relative;
+    left : 480px;
+    bottom: 530px;
+    font-family: FinkHeavy;
+    font-size: 30px;
+}
+
+.description{
+    position: relative;
+    left : 580px;
+    bottom: 520px;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: left;
+}
+
+.nutrititle {
+    position: relative;
+    left : 480px;
+    bottom: 497px;
+    font-family: FinkHeavy;
+    font-size: 30px;
+}
+
+.nutriimg {
+    position: absolute;
+    width: 305px;
+    height: 233px;
+    left: 567px;
+    top: 206px;
+    border: 1px solid black;
+}
+
+.glazelabel {
+    position: absolute;
+    width: 200px;
+    top: 1130px;
+    height: 32px;
+
+    background: #EA9898;
+}
+
+#noneglaze {
+    left: 385px;
+}
+
+#sugarmilk {
+    left: 615px;
+}
+
+#vanmilk {
+    left: 845px;
+}
+
+#doubchoc {
+    left: 1075px;
+}
+
+.buncountdd {
+    float: left;
+    position: absolute;
+    top: 1210px;
+    right: 600px;
+    width: 10%;
+}
+
+.cancelblock {
+    position: absolute;
+    width: 214px;
+    height: 44px;
+    left: 772px;
+    top: 1339px;
+
+    background: #FCFCFC;
+    border: 8px solid #EA9898;
+    box-sizing: border-box;
+}
+
+.addtocart {
+    position: absolute;
+    width: 215px;
+    height: 40px;
+    left: 638px;
+    top: 839px;
+    cursor: pointer;
+
+    background: #EA9898;
+    font-family: FinkHeavy;
+    font-size: 28px;
+}
+
+.ordertotal {
+    position: absolute;
+    top: 1349px;
+    left: 420px;
+    font-size: 28px;
+}
+
+select {
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 4px;
+
+    background-color: #f1f1f1;
+  }

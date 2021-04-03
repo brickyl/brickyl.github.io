@@ -1,6 +1,6 @@
 /* image 1 */
 body {
-    background-image: url("images/homebg.png");
+    background-image: url("../images/homebg.png");
     background-size: cover;
     background-position: center;
     width: 100%;

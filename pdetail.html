@@ -2,8 +2,16 @@
 <html>
     <head>
         <title>Bun Bun Bakeshop</title>
-        <link rel="stylesheet" href="pdetail.css" type="text/css">
+        <link rel="stylesheet" href="css/pdetail.css" type="text/css">
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery-ui.js"></script>
+
         <meta charset="UTF-8">
+        <script>
+            window.onload = updateqty();
+        </script>
     </head>
     <body>
         <ul>
@@ -15,25 +23,27 @@
 
         </ul>
         
-        <div class="homeback">
-            <div class="homebacktext">Back to Home</div>
-        </div>
+        <a href="index.html">
+            <div class="homeback">
+                <div class="homebacktext">Back to Home</div>
+            </div>
+        </a>
 
         <div>
             <div class="hcenter"> 
                 <img class="sign" src="images/titlesign.png" 
                 alt="Title Sign" id="titlesign"> 
                 <h1 class="titletext">
-                    <a href="home.html" class="ttformat">Bun Bun Bakeshop</a>
+                    <a href="index.html" class="ttformat">Bun Bun Bakeshop</a>
                 </h1>
             </div>
-            <div class="cart"> 
-                <img src="images/titlesign.png" 
-                alt="Cart Sign" id="cartsign" width="200">
-                <h2 class="carttext">
-                    <a href="cart.html" class="ttformat">Cart (0)</a>
-                </h2>
-            </div>
+            <a href="cart.html">
+                <div class="cart"> 
+                    <img src="images/titlesign.png" 
+                    alt="Cart Sign" id="cartsign" width="200">
+                    <h2 id="carttext">Cart - 0</h2>
+                </div>
+            </a>
         </div>
 
         <div class="menubox">
@@ -52,19 +62,36 @@
                 <h3 class="pick flavor">
                     1. Pick your flavor!
                 </h3>
-                <div class="itemimage">
-                    <img src="images/itemimage.png" 
-                    alt="Item">
-                    <form method="post">
-                        Flavors:
-                        <select name="flavors">
-                            <option value="original">Original</option>
-                            <option value="blackberry">Blackberry</option>
-                            <option value="walnut">Walnut</option>
-                            <option value="original, gluten free">Original (Gluten-Free)</option>
-                            <option value="pumpkin spice">Pumpkin Spice</option>
-                            <option value="caramel pecan">Caramel Pecan</option>
-                          </select>
+                <div class="topsect">
+                    <div class="container">
+                        <img id="pdimage" src="images/mblack.png" alt="Item">
+                    </div>
+                    
+                    <form onsubmit="return updateafteradd()" onchange="updateimg()" method="post" >
+                        <div class="buncount">
+                            <label for="numberbuns"  name="numberbuns" required>Buns:</label>
+                            <select name="numberbuns" id="numberbuns">
+                                <option value="1">1</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="flavors">
+                            <label for="flavors" name="flavors" required>Flavors:</label>
+                            <select name="flavors" id="flavors">
+                                <option value="blackberry">Blackberry</option>
+                                <option value="original">Original</option>
+                                <option value="walnut">Walnut</option>
+                                <option value="original, gluten free">Original (Gluten-Free)</option>
+                                <option value="pumpkin spice">Pumpkin Spice</option>
+                                <option value="caramel pecan">Caramel Pecan</option>
+                            </select>
+                        </div>
+
+                        <input type="submit" class="addtocart" value="Add to Cart">
+
+
                     </form>
                     <br>
                     <div class="horizdivide"></div>
@@ -79,7 +106,7 @@
                         earthiness to the classic <br>
                         cinnamon bun formula. <br>
                     </div>
-                    <div class="nutrilabel">
+                    <div class="nutrititle">
                         Nutrition Facts:
                     </div>
                     <div class="nutriimg">
@@ -87,6 +114,7 @@
                         alt="Nutrition">
                     </div>
                 </div>
+                
                 <div>
                     <h3 class="pick glazing">
                         2. Pick your glazing!
@@ -107,28 +135,17 @@
                 </div>
                 <div class="glaze-bunsdivide"></div>
                 <div class="buns-totaldivide"></div>
-                <h3 class="pick buncount">
+                <h3 class="pick buncountq">
                     3. How many buns?
                 </h3>
-                <div class="buncountdd">
-                    <form method="post">
-                        Buns:
-                        <select name="numberbuns">
-                            <option value="1">1</option>
-                            <option value="3">3</option>
-                            <option value="6">6</option>
-                            <option value="12">12</option>
-                          </select>
-                    </form>
-                </div>
+                
+
                 <div class="cancelblock"> 
                     Cancel
                 </div>
-                <div class="addtocartblock"> 
-                    <div class="addtocarttext">Add to Cart</div>
-                </div>
+                
                 <div class="ordertotal">
-                    Total:
+                    Total: $5
                 </div>
                              
             </div>

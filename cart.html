@@ -2,21 +2,21 @@
 <html>
     <head>
         <title>Bun Bun Bakeshop</title>
-        <link rel="stylesheet" href="css/menu.css" type="text/css">
+        <link rel="stylesheet" href="css/cart.css" type="text/css">
+        
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/jquery-ui.js"></script>
-
+        
         <meta charset="UTF-8">
-
         <script>
-            document.onload = updateqty;
+            window.onload = updateqty();
         </script>
     </head>
     <body>
         <ul>
             <li><a href="ourstory.html">Our Story</a></li>
-            <li><a href="menu.html"><u>Menu</u></a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="faqs.html">FAQs</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
@@ -48,45 +48,59 @@
             </a>
         </div>
 
-        <div class="menubox">
+        <div class="itemstext">
             <div class="backrect"></div>
             <div class="frontrect"></div>
-            <h2 id="menutitle">
-                Menu
+            <h2 id="carttitle">
+                Cart
             </h2>
+            <!-- How do you figure out this form which has potentially no elements -->
             <div class="orig"> 
                 <img src="images/mog.png" 
                 alt="Original">
-                <h3>Original  $4</h3>
-            </div>
-            <div class="blackb"> 
-                <a href="pdetail.html" class="ttformat">
-                    <img src="images/mblack.png" 
-                    alt="Blackberry">
-                    <h3>Blackberry  $5</h3>
-                </a>
-            </div>
-            <div class="wal"> 
-                <img src="images/mwal.png" 
-                alt="Walnut">
-                <h3>Walnut  $5</h3>
+                <h3>Original</h3>
+                <h4>Glazing: Vanilla-milk <br>
+                    Qty: 3 <br>
+                    Price: $12
+                </h4>
+                <div class="edit">
+                    <a href="pdetail.html">
+                        <h5>Edit <br></h5>
+                    </a>
+                </div>
+                <div class="delete">
+                    <a href="cart.html">
+                        <h5>Delete </h5>
+                    </a>
+                </div>
+                <div class="horizdivide"></div>
             </div>
             <div class="glutfree"> 
                 <img src="images/mogf.png" 
                 alt="Original, Gluten-Free">
-                <h3>Original <br> (Gluten-Free)  $4</h3>
+                <h3>Original (Gluten-Free)</h3>
+                <h4>Glazing: None <br> 
+                    Qty: 1 <br>
+                    Price: $4
+                </h4>
+                <div class="edit">
+                    <a href="pdetail.html">
+                        <h5>Edit <br></h5>
+                    </a>
+                </div>
+                <div class="delete">
+                    <a href="cart.html">
+                        <h5>Delete </h5>
+                    </a>
+                </div>
             </div>
-            <div class="pumpspice"> 
-                <img src="images/mps.png" 
-                alt="Pumpkin Spice">
-                <h3>Pumpkin Spice <br> (Most popular!)  $5</h3>
+            <div class="subtotal">
+                Subtotal: $16
             </div>
-            <div class="carpecn"> 
-                <img src="images/mcp.png" 
-                alt="caramelpecan">
-                <h3>Caramel Pecan <br> (New!)  $6</h3>
+            <div class="checkoutbutton"> 
+                Checkout
             </div>
-
+            <div class="cartfooter"></div>
         </div>
 
         <div class="bot">
