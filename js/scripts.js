@@ -1,19 +1,3 @@
-function validate(){
-    var entered = new Date($("#txtDate").val());
-    var y = $("#phone").val();
-    var today = new Date();
-    if (entered >= today) {
-        alert("Date of birth is not valid. Date has to be before today.");
-        return false;
-    }
-    if (isNaN(y) || y.length != 10) {
-        alert("Phone number is not valid or not in a valid format");
-        return false;
-    }
-    return true;
-    
-}
-
 function updateimg() {
     var flavorchoice = $("#flavors").val();
     var image = document.getElementById('pdimage');
@@ -35,23 +19,50 @@ function updateimg() {
     else if (flavorchoice == "walnut") {
         pdimage.src = "../brickyl.github.io/images/mwal.png";
     }
+}  
+
+function onLoad() {
+    if (localStorage.getItem("cart") != undefined) {
+        cartitems = JSON.parse(localStorage.getItem("cart"));
+    }
+    updateqty();
 }
 
-var buncount = 0;
+function selectGlaze(selectedG) {
+    lastClickedGlaze = selectedG;
+}
+
+var cartitems = [];
+var lastClickedGlaze = document.createElement("button");
+lastClickedGlaze.innerHTML = "None";
+
+function Item (flavor, glazing, count) {
+    this.flavor = flavor;
+    this.glazing = glazing;
+    this.count = count;
+}
+
+function addtocart() {
+    var flav = $("#flavors").val();
+    var glaz = lastClickedGlaze.innerHTML;
+    var ct = $("#numberbuns").val();
+    var newItem = new Item(flav, glaz, ct);
+    cartitems.push(newItem);
+    localStorage.setItem("functions", JSON.stringify([updateafteradd(), getCart()]));
+    localStorage.setItem("cart", JSON.stringify(cartitems));
+    updateafteradd();
+}
+
+function getCart() {
+    JSON.parse(localStorage.getItem("myCat"));
+}
 
 function updateafteradd() {
-    var thisQty = $("#numberbuns").val();
-    var carttxt = document.getElementById('carttext');
-
-    var cartnum = carttxt.innerHTML.replace( /^\D+/g, '');
-    var total = parseInt(cartnum) + parseInt(thisQty);
-    buncount = total;
-
-    var newcartstr = "Cart - " + total;
-    document.getElementById('carttext').textContent = newcartstr;
+    var clientcart = (localStorage.getItem("cart")).length;
+    var newcartstr = "Cart - " + cartitems.length;
+    document.getElementById('carttext').innerHTML = newcartstr;
     setcartstr(newcartstr);
-    return false;
-
+    return true;
 }
 
 function getcartstr() {

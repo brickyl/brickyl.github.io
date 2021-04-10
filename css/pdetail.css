@@ -88,6 +88,8 @@ li a:hover {
 
 
 
+
+
 .backrect {
     position: absolute;
     width: 1024px;
@@ -198,17 +200,18 @@ li a:hover {
 
 .pick {
     position: absolute;
-    right: 225px;
+    right: 625px;
 }
 
 .flavor {
     top: 400px;
+    right: 210px;
 
 }
 
 .glazing {
-    top: 950px;
-    right: 205px;
+    top: 930px;
+    right: 210px;
 }
 
 .buncount {
@@ -221,8 +224,7 @@ li a:hover {
 }
 
 .buncountq {
-    top: 1030px;
-    right: 220px;
+    top: 1025px;
 }
 
 .menubox h3 {
@@ -310,7 +312,7 @@ li a:hover {
     width: 305px;
     height: 233px;
     left: 567px;
-    top: 206px;
+    top: 230px;
     border: 1px solid black;
 }
 
@@ -385,4 +387,32 @@ select {
     border-radius: 4px;
 
     background-color: #f1f1f1;
-  }
+}
+
+#glazebuttons button {
+    position: relative;
+    width: 200px;
+    top: 920px;
+    left: 420px;
+
+    background-color: #EA9898;
+    border: 1px solid rgb(223, 192, 192);
+    color: rgb(48, 17, 17);
+    padding: 12px 28px;
+    cursor: pointer;
+    float: left;
+}
+  
+.glazebuttons button:not(:last-child) {
+    border-right: none;
+}
+  
+.glazebuttons:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.glazebuttons button:hover {
+    background-color: #e49081;
+}

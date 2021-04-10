@@ -3,17 +3,16 @@
     <head>
         <title>Bun Bun Bakeshop</title>
         <link rel="stylesheet" href="css/menu.css" type="text/css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/jquery-ui.js"></script>
 
         <meta charset="UTF-8">
 
-        <script>
-            document.onload = updateqty;
-        </script>
     </head>
-    <body>
+    <body onload="onLoad()">
         <ul>
             <li><a href="ourstory.html">Our Story</a></li>
             <li><a href="menu.html"><u>Menu</u></a></li>
@@ -37,15 +36,14 @@
                     <a href="index.html" class="ttformat">Bun Bun Bakeshop</a>
                 </h1>
             </div>
-            <a href="cart.html">
-                <div class="cart"> 
+            <div class="cart"> 
+                <a href="cart.html">
                     <img src="images/titlesign.png" 
                     alt="Cart Sign" id="cartsign" width="200">
-                    <h2 class="carttext">
-                        <a href="cart.html" class="ttformat">Cart - 0</a>
-                    </h2>
-                </div>
-            </a>
+                    <h2 id="carttext">Cart - 0</h2>
+                </a>
+            </div>
+
         </div>
 
         <div class="menubox">

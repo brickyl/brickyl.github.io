@@ -3,17 +3,16 @@
     <head>
         <title>Bun Bun Bakeshop</title>
         <link rel="stylesheet" href="css/cart.css" type="text/css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
         
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/jquery-ui.js"></script>
         
         <meta charset="UTF-8">
-        <script>
-            window.onload = updateqty();
-        </script>
+
     </head>
-    <body>
+    <body onload="onLoad()">
         <ul>
             <li><a href="ourstory.html">Our Story</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -22,12 +21,13 @@
             <li><a href="contactus.html">Contact Us</a></li>
 
         </ul>
-        
-        <a href="index.html">
-            <div class="homeback">
-                <div class="homebacktext">Back to Home</div>
+    
+        <div class="homeback">
+            <div class="homebacktext">
+                <a href="index.html">Back to Home</a>
             </div>
-        </a>
+        </div>
+
 
         <div>
             <div class="hcenter"> 
@@ -37,15 +37,14 @@
                     <a href="index.html" class="ttformat">Bun Bun Bakeshop</a>
                 </h1>
             </div>
-            <a href="cart.html">
-                <div class="cart"> 
+            <div class="cart"> 
+                <a href="cart.html">
                     <img src="images/titlesign.png" 
                     alt="Cart Sign" id="cartsign" width="200">
-                    <h2 class="carttext">
-                        <a href="cart.html" class="ttformat">Cart - 0</a>
-                    </h2>
-                </div>
-            </a>
+                    <h2 id="carttext">Cart - 0</h2>
+                </a>
+            </div>
+            
         </div>
 
         <div class="itemstext">
@@ -54,7 +53,13 @@
             <h2 id="carttitle">
                 Cart
             </h2>
-            <!-- How do you figure out this form which has potentially no elements -->
+
+            <div id="cart" class="flexbox">
+                <div id="itemDetails">
+                    <p id="empty"></p>
+                </div>
+            </div>
+
             <div class="orig"> 
                 <img src="images/mog.png" 
                 alt="Original">
@@ -69,9 +74,11 @@
                     </a>
                 </div>
                 <div class="delete">
-                    <a href="cart.html">
-                        <h5>Delete </h5>
-                    </a>
+                    <h5>
+                        <a href="cart.html">
+                            Delete
+                        </a>
+                    </h5>
                 </div>
                 <div class="horizdivide"></div>
             </div>
@@ -84,14 +91,18 @@
                     Price: $4
                 </h4>
                 <div class="edit">
-                    <a href="pdetail.html">
-                        <h5>Edit <br></h5>
-                    </a>
+                    <h5>
+                        <a href="pdetail.html">
+                            Edit <br>
+                        </a>
+                    </h5>
                 </div>
                 <div class="delete">
-                    <a href="cart.html">
-                        <h5>Delete </h5>
-                    </a>
+                    <h5>
+                        <a href="cart.html">
+                            Delete
+                        </a>
+                    </h5>
                 </div>
             </div>
             <div class="subtotal">
