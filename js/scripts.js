@@ -78,3 +78,8 @@ function updateqty() {
     var cartstr = getcartstr();
     document.getElementById('carttext').innerHTML = cartstr;
 }
+
+function makeDiv() {
+    var a = document.createElement("div");
+    
+}
