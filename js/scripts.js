@@ -21,11 +21,19 @@ function updateimg() {
     }
 }  
 
-function onLoad() {
+function pdOnLoad() {
     if (localStorage.getItem("cart") != undefined) {
         cartitems = JSON.parse(localStorage.getItem("cart"));
     }
     updateqty();
+}
+
+function cartOnLoad() {
+    if (localStorage.getItem("cart") != undefined) {
+        cartitems = JSON.parse(localStorage.getItem("cart"));
+    }
+    updateqty();
+    updateSubtotal();
 }
 
 function selectGlaze(selectedG) {
@@ -35,11 +43,20 @@ function selectGlaze(selectedG) {
 var cartitems = [];
 var lastClickedGlaze = document.createElement("button");
 lastClickedGlaze.innerHTML = "None";
+var prices = {
+    "original" : 4,
+    "blackberry" : 5,
+    "caramel pecan" : 6,
+    "original, gluten free" : 4,
+    "pumpkin spice" : 5,
+    "walnut" : 5 
+};
 
 function Item (flavor, glazing, count) {
     this.flavor = flavor;
     this.glazing = glazing;
     this.count = count;
+    this.price = prices[this.flavor] * this.count;
 }
 
 function addtocart() {
@@ -48,9 +65,9 @@ function addtocart() {
     var ct = $("#numberbuns").val();
     var newItem = new Item(flav, glaz, ct);
     cartitems.push(newItem);
-    localStorage.setItem("functions", JSON.stringify([updateafteradd(), getCart()]));
     localStorage.setItem("cart", JSON.stringify(cartitems));
     updateafteradd();
+    updateItemTotal(newItem.price);
 }
 
 function getCart() {
@@ -58,7 +75,6 @@ function getCart() {
 }
 
 function updateafteradd() {
-    var clientcart = (localStorage.getItem("cart")).length;
     var newcartstr = "Cart - " + cartitems.length;
     document.getElementById('carttext').innerHTML = newcartstr;
     setcartstr(newcartstr);
@@ -79,7 +95,36 @@ function updateqty() {
     document.getElementById('carttext').innerHTML = cartstr;
 }
 
+function populate() {
+
+}
+
+function updateCart() {
+
+}
+
 function makeDiv() {
     var a = document.createElement("div");
-    
+
+}
+
+function updateItemTotal(price) {
+	document.getElementById("orderTotal").innerHTML = "Total: $" + price;
+}
+
+function updatetotalandimage() {
+    updateimg();
+    var itemprice = prices[$("#flavors").val()];
+    var itemcount = $("#numberbuns").val();
+    updateItemTotal(itemprice * itemcount);
+}
+
+function updateSubtotal() {
+    var st = 0;
+    for (i = 0; i < cartitems; i++) {
+        st += cartitems[i].price;
+    }
+    console.log(document.getElementById("subtotal").innerHTML);
+    document.getElementById("subtotal").innerHTML = "Subtotal: $" + st;
+    console.log(document.getElementById("subtotal").innerHTML);
 }

@@ -12,7 +12,7 @@
         <meta charset="UTF-8">
 
     </head>
-    <body onload="onLoad()">
+    <body onload="pdOnLoad()">
         <ul>
             <li><a href="ourstory.html">Our Story</a></li>
             <li><a href="menu.html"><u>Menu</u></a></li>
@@ -67,7 +67,7 @@
                         <img id="pdimage" src="images/mblack.png" alt="Item">
                     </div>
                     
-                    <form onchange="updateimg()" method="post" >
+                    <form onchange="updatetotalandimage()" method="post" >
                         <div class="flavors">
                             <label for="flavors" name="flavors" required>Flavors:</label>
                             <select name="flavors" id="flavors">
@@ -81,7 +81,7 @@
                         </div>
                         
                     </form>
-                    <form>
+                    <form onchange="updatetotalandimage()">
                         <div class="buncount">
                             <label for="numberbuns"  name="numberbuns" required>Buns:</label>
                             <select name="numberbuns" id="numberbuns">
@@ -142,7 +142,7 @@
                     Cancel
                 </div>
                 
-                <div class="ordertotal">
+                <div id="ordertotal">
                     Total: $5
                 </div>            
             </div>

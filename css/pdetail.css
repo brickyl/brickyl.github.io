@@ -86,10 +86,6 @@ li a:hover {
     border-radius: 30px;
 }
 
-
-
-
-
 .backrect {
     position: absolute;
     width: 1024px;
@@ -374,7 +370,7 @@ li a:hover {
     font-size: 28px;
 }
 
-.ordertotal {
+#ordertotal {
     position: absolute;
     top: 1349px;
     left: 420px;
