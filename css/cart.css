@@ -289,11 +289,50 @@ li a:hover {
     box-sizing: border-box;
 }
 
-#cart {
-    width: 800px;
+#cart-container {
+    position: absolute;
+    width: 1024px;
+    left: 334px;
+    top: 444px;
+    border: 5px solid rgba(0, 0, 0, 0.62);
 }
 
-.blockcart {
+#cart {
     display: block;
-    justify-content: space-between;
+    margin: 10px;
+    overflow: scroll;
+    max-height: 523px;
+    height: 523px;
+    font-family: "FinkHeavy", sans-serif;
+
+}
+
+#cart h3 {
+    position: relative;
+    display: inline;
+    bottom: 160px;
+    left: 100px;
+    
+}
+
+
+#itemGlaze {
+    position: relative;
+    display: inline;
+    bottom: 140px;
+    left: 45px;
+}
+
+#itemCt {
+    position: relative;
+    display: inline;
+    bottom: 120px;
+    right: 45px;
+}
+
+#itemPrice {
+    position: relative;
+    display: inline;
+    bottom: 100px;
+    right: 95px;
 }

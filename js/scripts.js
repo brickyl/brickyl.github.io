@@ -28,12 +28,17 @@ function pdOnLoad() {
     updateqty();
 }
 
+function onLoad() {
+    pdOnLoad();
+}
+
 function cartOnLoad() {
     if (localStorage.getItem("cart") != undefined) {
         cartitems = JSON.parse(localStorage.getItem("cart"));
     }
     updateqty();
     updateSubtotal();
+    populate();
 }
 
 function selectGlaze(selectedG) {
@@ -57,6 +62,7 @@ function Item (flavor, glazing, count) {
     this.glazing = glazing;
     this.count = count;
     this.price = prices[this.flavor] * this.count;
+    this.index = cartitems.length;
 }
 
 function addtocart() {
@@ -68,10 +74,6 @@ function addtocart() {
     localStorage.setItem("cart", JSON.stringify(cartitems));
     updateafteradd();
     updateItemTotal(newItem.price);
-}
-
-function getCart() {
-    JSON.parse(localStorage.getItem("myCat"));
 }
 
 function updateafteradd() {
@@ -96,16 +98,71 @@ function updateqty() {
 }
 
 function populate() {
-
+    var cartnode = document.getElementById("cart");
+    for (let i = 0; i < cartitems.length; i++) {
+        let currItem = cartitems[i];
+        let image = document.createElement("img");
+        let itemName = document.createElement("h3")
+        if (currItem.flavor == "original") {
+            image.src = "../brickyl.github.io/images/mog.png";
+            itemName.innerHTML = "Original";
+        }
+        else if (currItem.flavor == "blackberry") {
+            image.src = "../brickyl.github.io/images/mblack.png";
+            itemName.innerHTML = "Blackberry";
+        }
+        else if (currItem.flavor == "original, gluten free") {
+            image.src = "../brickyl.github.io/images/mogf.png";        
+            itemName.innerHTML = "Original, Gluten-Free";
+        }
+        else if (currItem.flavor == "pumpkin spice") {
+            image.src = "../brickyl.github.io/images/mps.png";        
+            itemName.innerHTML = "Pumpkin Spice";
+        }
+        else if (currItem.flavor == "caramel pecan") {
+            image.src = "../brickyl.github.io/images/mcp.png";
+            itemName.innerHTML = "Caramel Pecan";        
+        }
+        else if (currItem.flavor == "walnut") {
+            image.src = "../brickyl.github.io/images/mwal.png";
+            itemName.innerHTML = "Walnut";
+        }
+        
+        let itemGlaze = document.createElement("p");
+        itemGlaze.id = "itemGlaze";
+        itemGlaze.innerHTML = "Glazing: " + currItem.glazing;
+        let itemCt = document.createElement("p");
+        itemCt.id = "itemCt";
+        itemCt.innerHTML = "Count: " + currItem.count;
+        let itemPrice = document.createElement("p");
+        itemPrice.id = "itemPrice";
+        itemPrice.innerHTML = "Price: " + currItem.price;
+        cartnode.appendChild(image);
+        cartnode.appendChild(itemName);
+        cartnode.appendChild(itemGlaze);
+        cartnode.appendChild(itemCt);
+        cartnode.appendChild(itemPrice);
+        
+        let deleteBt = document.createElement("button");
+        deleteBt.onclick = deleteItem;
+        /* indexToDel = currIndex.index; */
+        deleteBt.innerHTML = "Delete";
+        cartnode.appendChild(deleteBt);
+        cartnode.appendChild(document.createElement("hr"));
+    }
 }
 
-function updateCart() {
+var indexToDel;
 
+function resetCart() {
+    document.getElementById("cart").innerHTML = "";
 }
 
-function makeDiv() {
-    var a = document.createElement("div");
-
+function deleteItem() {
+    delete cartitems[indexToDel];
+    localStorage.setItem("cart", JSON.stringify(cartitems));
+    resetCart();
+    populate();
 }
 
 function updateItemTotal(price) {
@@ -121,8 +178,9 @@ function updatetotalandimage() {
 
 function updateSubtotal() {
     var st = 0;
-    for (i = 0; i < cartitems; i++) {
+    for (i = 0; i < cartitems.length; i++) {
         st += cartitems[i].price;
+     
     }
     console.log(document.getElementById("subtotal").innerHTML);
     document.getElementById("subtotal").innerHTML = "Subtotal: $" + st;
